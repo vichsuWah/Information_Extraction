@@ -1,10 +1,12 @@
-# Cinnamon Information Extraction
-ADL2020-SPRING Final project
+# *Cinnamon* - Document Information Extraction
+> NTU ADL(2020 Spring) Final Project
 
-## Report 
-[[pdf]](https://github.com/wubinary/Information_Extraction/blob/master/Report.pdf)
+## Intro.
+The purpose of this task is to extract the important information from the offical documents.
 
-## Train v2 preprocessing
+Report: [Report Link](https://github.com/vichsuWah/Information_Extraction/blob/main/Report.pdf)
+
+## Training
 ```cmd=
 # train naive baseline
 > make wu_train_naive_baseline_v2
@@ -13,7 +15,7 @@ ADL2020-SPRING Final project
 > make wu_train_blstm_v2
 ```
 
-## Inference v2 preprocessing
+## Evaluation
 ```cmd=
 # inference naive baseline
 > make wu_inference_naive_baseline_dev
@@ -24,9 +26,8 @@ ADL2020-SPRING Final project
 > make wu_inference_blstm_test_v2
 ```
 
-## Test
+## Testing
 ```cmd= 
-> python3.6 test.py {past_to_test_set_dir}
-
+> python3 test.py {past_to_test_set_dir}
 ```
 
